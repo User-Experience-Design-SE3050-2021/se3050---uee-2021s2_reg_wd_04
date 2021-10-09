@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Vegetables extends StatelessWidget {
-  const Vegetables({Key? key}) : super(key: key);
+class Fruits extends StatelessWidget {
+  const Fruits({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,10 +31,10 @@ class Vegetables extends StatelessWidget {
                     width: 10,
                   ),
                   Text(
-                    "Vegetables",
+                    "Fruits",
                     style: TextStyle(
                         fontSize: 30,
-                        color: Colors.green,
+                        color: Colors.red,
                         fontFamily: "calibri",
                         fontWeight: FontWeight.bold),
                   ),
@@ -77,7 +77,7 @@ class Vegetables extends StatelessWidget {
                                 right: 5,
                                 bottom: 1,
                                 child: Image.asset(
-                                  'assets/images/pumpkin.png',
+                                  'assets/images/fruits.png',
                                   scale: 16,
                                 ),
                               ),
@@ -87,12 +87,12 @@ class Vegetables extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     Text(
-                                      'Vegetables',
+                                      'Fruits',
                                       style: TextStyle(
                                         // fontFamily: SANSATION_REGULAR,
                                         fontSize: 30,
                                         fontWeight: FontWeight.w600,
-                                        color: Color(0xFF6F35A5),
+                                        color: Colors.orange,
                                       ),
                                     ),
                                     Padding(
