@@ -16,11 +16,35 @@ AppBarTheme appBarTheme() {
 }
 
 TextTheme textTheme() {
-  return TextTheme();
+  return TextTheme(
+    headline1: TextStyle(
+      color: Color(0xffFD051B),
+      fontSize: 30,
+      fontWeight: FontWeight.bold,
+    ),
+    bodyText1: TextStyle(
+      color: Color(0xffFD051B),
+      fontSize: 30,
+      fontWeight: FontWeight.bold,
+    ),
+  );
 }
 
 InputDecorationTheme inputDecorationTheme() {
-  return InputDecorationTheme();
+  return InputDecorationTheme(
+    border: InputBorder.none,
+  );
 }
 
-// Color(0xffFD051B)
+ElevatedButtonThemeData elevatedButtonThemeData() {
+  return ElevatedButtonThemeData(
+    style: ButtonStyle(
+      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+        RoundedRectangleBorder(
+          borderRadius: BorderRadius.zero,
+          side: BorderSide(color: Colors.red),
+        ),
+      ),
+    ),
+  );
+}
