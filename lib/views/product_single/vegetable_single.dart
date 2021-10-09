@@ -9,9 +9,34 @@ class VegeSingle extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
-        padding: EdgeInsets.only(top: 70, left: 10, right: 10, bottom: 10),
+        padding: EdgeInsets.only(top: 50, left: 10, right: 10, bottom: 10),
         child: Column(
           children: [
+            Padding(
+              padding: EdgeInsets.only(top: 5),
+              child: Row(
+                children: [
+                  IconButton(
+                    icon: Icon(
+                      Icons.menu,
+                    ),
+                    onPressed: () {},
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  // Icon(Icons.arrow_back_ios),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Expanded(child: Container()),
+                  Icon(Icons.shopping_cart),
+                  SizedBox(
+                    width: 10,
+                  ),
+                ],
+              ),
+            ),
             Positioned(
               right: 5,
               bottom: 1,
