@@ -3,6 +3,8 @@ import 'package:cargills_online_app/views/signup/signup_screen.dart';
 import 'package:cargills_online_app/views/welcome/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'views/products/categories_screen.dart';
+
 void main() {
   runApp(const CargillsOnline());
 }
@@ -16,7 +18,7 @@ class CargillsOnline extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Cargills Online',
       theme: theme(),
-      home: SignUpScreen(),
+      home: CategoriesPage('This is Cargills app'),
     );
   }
 }
