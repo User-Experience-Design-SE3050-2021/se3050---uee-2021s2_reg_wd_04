@@ -150,7 +150,7 @@ class Vegetables extends StatelessWidget {
                                           right: 20,
                                           top: -10,
                                           child: Image.asset(
-                                            'assets/images/pay_credit.png',
+                                            'assets/images/tomatoes.png',
                                             scale: 16,
                                           ),
                                         ),
