@@ -1,4 +1,6 @@
+import 'package:cargills_online_app/views/product_single/vegetable_single.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Vegetables extends StatelessWidget {
   const Vegetables({Key? key}) : super(key: key);
@@ -10,18 +12,18 @@ class Vegetables extends StatelessWidget {
       body: Container(
         child: Column(
           children: [
-            SizedBox(
-              height: 40,
-            ),
             Padding(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.only(
+                  top: 50, left: 30, right: 30, bottom: 10),
               child: Row(
                 children: [
                   IconButton(
                     icon: Icon(
-                      Icons.menu,
+                      Icons.arrow_back_ios,
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.back();
+                    },
                   ),
                   SizedBox(
                     width: 20,
@@ -59,7 +61,7 @@ class Vegetables extends StatelessWidget {
                           color: Colors.white,
                           border: Border.all(
                             width: 2,
-                            color: Colors.purple.shade400,
+                            color: Colors.green.shade200,
                           ),
                           borderRadius: BorderRadius.circular(20),
                         ),
@@ -123,45 +125,50 @@ class Vegetables extends StatelessWidget {
                           Expanded(
                             child: Column(
                               children: [
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    border: Border.all(
-                                      width: 2,
-                                      color: Colors.purple.shade400,
-                                    ),
-                                    borderRadius: BorderRadius.circular(20),
-                                  ),
-                                  margin: EdgeInsets.symmetric(
-                                    horizontal: 20,
-                                    vertical: 20,
-                                  ),
-                                  width: double.infinity,
-                                  height: size.height * 0.2,
-                                  child: Stack(
-                                    children: <Widget>[
-                                      Positioned(
-                                        right: 20,
-                                        top: -10,
-                                        child: Image.asset(
-                                          'assets/images/pay_credit.png',
-                                          scale: 16,
-                                        ),
+                                GestureDetector(
+                                  onTap: () {
+                                    Get.to(VegeSingle());
+                                  },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border: Border.all(
+                                        width: 2,
+                                        color: Colors.purple.shade400,
                                       ),
-                                      Positioned(
-                                        bottom: 10,
-                                        right: 35,
-                                        child: Text(
-                                          'Tomatoes',
-                                          style: TextStyle(
-                                            // fontFamily: SANSATION_REGULAR,
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.w600,
-                                            color: Color(0xFF6F35A5),
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    margin: EdgeInsets.symmetric(
+                                      horizontal: 20,
+                                      vertical: 20,
+                                    ),
+                                    width: double.infinity,
+                                    height: size.height * 0.2,
+                                    child: Stack(
+                                      children: <Widget>[
+                                        Positioned(
+                                          right: 20,
+                                          top: -10,
+                                          child: Image.asset(
+                                            'assets/images/pay_credit.png',
+                                            scale: 16,
                                           ),
                                         ),
-                                      ),
-                                    ],
+                                        Positioned(
+                                          bottom: 10,
+                                          right: 35,
+                                          child: Text(
+                                            'Tomatoes',
+                                            style: TextStyle(
+                                              // fontFamily: SANSATION_REGULAR,
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.w600,
+                                              color: Color(0xFF6F35A5),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],

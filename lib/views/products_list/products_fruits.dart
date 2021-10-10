@@ -1,4 +1,6 @@
+import 'package:cargills_online_app/views/products_categories/categories_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Fruits extends StatelessWidget {
   const Fruits({Key? key}) : super(key: key);
@@ -10,18 +12,18 @@ class Fruits extends StatelessWidget {
       body: Container(
         child: Column(
           children: [
-            SizedBox(
-              height: 40,
-            ),
             Padding(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.only(
+                  top: 50, left: 30, right: 30, bottom: 10),
               child: Row(
                 children: [
                   IconButton(
                     icon: Icon(
-                      Icons.menu,
+                      Icons.arrow_back_ios,
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.back();
+                    },
                   ),
                   SizedBox(
                     width: 20,
@@ -59,7 +61,7 @@ class Fruits extends StatelessWidget {
                           color: Colors.white,
                           border: Border.all(
                             width: 2,
-                            color: Colors.purple.shade400,
+                            color: Colors.red.shade200,
                           ),
                           borderRadius: BorderRadius.circular(20),
                         ),

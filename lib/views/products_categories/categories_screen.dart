@@ -1,4 +1,7 @@
+import 'package:cargills_online_app/views/products_list/products_fruits.dart';
+import 'package:cargills_online_app/views/products_list/products_vegetables.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class CategoriesPage extends StatefulWidget {
   CategoriesPage(String s);
@@ -13,14 +16,14 @@ class _CategoriesPageState extends State<CategoriesPage> {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       body: Container(
-        padding: EdgeInsets.only(top: 70, left: 30, right: 30, bottom: 10),
+        padding: EdgeInsets.only(top: 50, left: 30, right: 30, bottom: 10),
         child: Column(
           children: [
             Row(
               children: [
                 IconButton(
                   icon: Icon(
-                    Icons.menu,
+                    Icons.arrow_back_ios,
                   ),
                   onPressed: () {},
                 ),
@@ -53,80 +56,90 @@ class _CategoriesPageState extends State<CategoriesPage> {
               child: ListView(
                 padding: EdgeInsets.only(top: 20, bottom: 20),
                 children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width,
-                    height: 100,
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: [
-                          Colors.blue.withOpacity(0.8),
-                          Colors.green.withOpacity(0.8),
-                        ],
-                        begin: Alignment.bottomLeft,
-                        end: Alignment.centerRight,
-                      ),
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(10),
-                        bottomRight: Radius.circular(10),
-                        bottomLeft: Radius.circular(10),
-                        topRight: Radius.circular(50),
-                      ),
-                    ),
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(Vegetables());
+                    },
                     child: Container(
-                      padding: const EdgeInsets.only(left: 20, top: 25),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Vegetables",
-                            style: TextStyle(
-                                fontSize: 28,
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold),
-                          ),
-                        ],
+                      width: MediaQuery.of(context).size.width,
+                      height: 100,
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          colors: [
+                            Colors.blue.withOpacity(0.8),
+                            Colors.green.withOpacity(0.8),
+                          ],
+                          begin: Alignment.bottomLeft,
+                          end: Alignment.centerRight,
+                        ),
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(10),
+                          bottomRight: Radius.circular(10),
+                          bottomLeft: Radius.circular(10),
+                          topRight: Radius.circular(50),
+                        ),
+                      ),
+                      child: Container(
+                        padding: const EdgeInsets.only(left: 20, top: 25),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Vegetables",
+                              style: TextStyle(
+                                  fontSize: 28,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
                   SizedBox(
                     height: 10,
                   ),
-                  Container(
-                    width: MediaQuery.of(context).size.width,
-                    height: 100,
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: [
-                          Colors.green.withOpacity(0.8),
-                          Colors.orange.withOpacity(0.8),
-                        ],
-                        begin: Alignment.bottomLeft,
-                        end: Alignment.centerRight,
-                      ),
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(10),
-                        bottomRight: Radius.circular(10),
-                        bottomLeft: Radius.circular(10),
-                        topRight: Radius.circular(50),
-                      ),
-                    ),
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(Fruits());
+                    },
                     child: Container(
-                      padding: const EdgeInsets.only(left: 20, top: 25),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Fruits",
-                            style: TextStyle(
-                                fontSize: 28,
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Expanded(
-                              child: Container(
-                            height: 200,
-                          )),
-                        ],
+                      width: MediaQuery.of(context).size.width,
+                      height: 100,
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          colors: [
+                            Colors.green.withOpacity(0.8),
+                            Colors.orange.withOpacity(0.8),
+                          ],
+                          begin: Alignment.bottomLeft,
+                          end: Alignment.centerRight,
+                        ),
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(10),
+                          bottomRight: Radius.circular(10),
+                          bottomLeft: Radius.circular(10),
+                          topRight: Radius.circular(50),
+                        ),
+                      ),
+                      child: Container(
+                        padding: const EdgeInsets.only(left: 20, top: 25),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Fruits",
+                              style: TextStyle(
+                                  fontSize: 28,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            Expanded(
+                                child: Container(
+                              height: 200,
+                            )),
+                          ],
+                        ),
                       ),
                     ),
                   ),

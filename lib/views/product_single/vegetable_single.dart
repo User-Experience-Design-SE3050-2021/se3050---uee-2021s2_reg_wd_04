@@ -9,7 +9,7 @@ class VegeSingle extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
-        padding: EdgeInsets.only(top: 50, left: 10, right: 10, bottom: 10),
+        padding: EdgeInsets.only(top: 50, left: 30, right: 30, bottom: 10),
         child: Column(
           children: [
             Padding(
@@ -18,9 +18,11 @@ class VegeSingle extends StatelessWidget {
                 children: [
                   IconButton(
                     icon: Icon(
-                      Icons.menu,
+                      Icons.arrow_back_ios,
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.back();
+                    },
                   ),
                   SizedBox(
                     width: 20,
@@ -41,8 +43,8 @@ class VegeSingle extends StatelessWidget {
               right: 5,
               bottom: 1,
               child: Image.asset(
-                'assets/images/veg1.png',
-                scale: 12,
+                'assets/images/tomato.jpg',
+                scale: 20,
               ),
             ),
             SizedBox(height: size.height * 0.05),
@@ -98,7 +100,7 @@ class VegeSingle extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: size.height * 0.1),
+            SizedBox(height: 10),
             Container(
               margin: EdgeInsets.symmetric(vertical: 10),
               width: size.width * 0.8,
