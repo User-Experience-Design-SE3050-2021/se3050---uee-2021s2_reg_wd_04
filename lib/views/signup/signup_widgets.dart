@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class PageBackButton extends StatelessWidget {
   const PageBackButton({Key? key}) : super(key: key);
@@ -8,7 +9,9 @@ class PageBackButton extends StatelessWidget {
     return Row(
       children: [
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Get.back();
+          },
           icon: Icon(
             Icons.arrow_back_ios_new_sharp,
           ),

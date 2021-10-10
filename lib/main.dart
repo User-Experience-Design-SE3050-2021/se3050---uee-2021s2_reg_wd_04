@@ -1,4 +1,5 @@
 import 'package:cargills_online_app/theme_data.dart';
+import 'package:cargills_online_app/views/home/home_screen.dart';
 import 'package:cargills_online_app/views/signin/signin_screen.dart';
 
 import 'package:flutter/material.dart';
@@ -19,7 +20,7 @@ class CargillsOnline extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Cargills Online',
       theme: theme(),
-      home: SignInScreen(),
+      home: HomeScreen(),
     );
   }
 }

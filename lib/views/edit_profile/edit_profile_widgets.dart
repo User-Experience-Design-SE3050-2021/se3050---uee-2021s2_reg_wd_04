@@ -93,32 +93,43 @@ class PasswordFieldWidget extends StatelessWidget {
   }
 }
 
-// Button widget
-class ButtonWidget extends StatelessWidget {
-  const ButtonWidget(
-      {Key? key, required this.buttonTitle, required this.onButtonPressed})
+class ProfileButtonWidget extends StatelessWidget {
+  const ProfileButtonWidget(
+      {Key? key, required this.buttonTitle, required this.onButtonPress})
       : super(key: key);
   final String buttonTitle;
-  final Function onButtonPressed;
+  final Function onButtonPress;
+
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: () {
-        onButtonPressed();
-      },
-      style: ElevatedButton.styleFrom(
-        primary: Color(0xffFD051B),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20.0),
-        ),
-        padding: EdgeInsets.symmetric(vertical: 20.0),
-      ),
-      child: Text(
-        buttonTitle,
-        style: TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.bold,
-        ),
+    return Container(
+      child: Row(
+        children: [
+          Expanded(
+            child: ElevatedButton(
+              onPressed: () {
+                onButtonPress();
+              },
+              style: ElevatedButton.styleFrom(
+                primary: Color(0xffFD051B),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(30),
+                    topRight: Radius.circular(30),
+                  ),
+                ),
+                padding: EdgeInsets.fromLTRB(0, 20, 0, 50),
+              ),
+              child: Text(
+                buttonTitle,
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

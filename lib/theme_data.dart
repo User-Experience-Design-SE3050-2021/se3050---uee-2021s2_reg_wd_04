@@ -8,6 +8,7 @@ ThemeData theme() {
     appBarTheme: appBarTheme(),
     textTheme: textTheme(),
     inputDecorationTheme: inputDecorationTheme(),
+    canvasColor: Colors.transparent,
   );
 }
 
@@ -25,6 +26,11 @@ TextTheme textTheme() {
     bodyText1: TextStyle(
       color: Color(0xffFD051B),
       fontSize: 30,
+      fontWeight: FontWeight.bold,
+    ),
+    bodyText2: TextStyle(
+      color: Colors.grey.shade600,
+      fontSize: 23.0,
       fontWeight: FontWeight.bold,
     ),
   );
@@ -46,5 +52,19 @@ ElevatedButtonThemeData elevatedButtonThemeData() {
         ),
       ),
     ),
+  );
+}
+
+IconThemeData selectedIconThemeData() {
+  return IconThemeData(
+    color: Color(0xffFD051B),
+    size: 30.0,
+  );
+}
+
+IconThemeData unSelectedIconThemeData() {
+  return IconThemeData(
+    color: Colors.white,
+    size: 30.0,
   );
 }

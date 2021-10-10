@@ -39,6 +39,19 @@ class SignInScreen extends StatelessWidget {
                       SizedBox(height: size.height * 0.03),
                       GestureDetector(
                         onTap: () {
+                          // Get.to();
+                        },
+                        child: Text(
+                          'Forgot password?',
+                          style: TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: size.height * 0.35),
+                      GestureDetector(
+                        onTap: () {
                           Get.to(SignUpScreen());
                         },
                         child: Text(
@@ -49,14 +62,14 @@ class SignInScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(height: size.height * 0.04),
+                      SizedBox(height: size.height * 0.05),
                       Container(
                         margin: EdgeInsets.fromLTRB(10, 10, 10, 20),
                         child: Row(
                           children: [
                             Expanded(
                               child: ButtonWidget(
-                                buttonTitle: 'Sign Up',
+                                buttonTitle: 'Sign In',
                                 onButtonPressed: () {
                                   print('Clicked');
                                 },
