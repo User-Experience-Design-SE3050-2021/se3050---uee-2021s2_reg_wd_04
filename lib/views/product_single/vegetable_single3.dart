@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class VegeSingle extends StatelessWidget {
-  const VegeSingle({Key? key}) : super(key: key);
+class VegeSingle3 extends StatelessWidget {
+  const VegeSingle3({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -43,8 +43,8 @@ class VegeSingle extends StatelessWidget {
               right: 5,
               bottom: 1,
               child: Image.asset(
-                'assets/images/tomato.jpg',
-                scale: 20,
+                'assets/images/carrots.png',
+                scale: 1,
               ),
             ),
             SizedBox(height: size.height * 0.05),
@@ -54,7 +54,7 @@ class VegeSingle extends StatelessWidget {
                 color: Colors.red,
               ),
               title: Text(
-                'Tomato',
+                'Carrots',
                 style: TextStyle(
                   fontSize: 40.0,
                   fontWeight: FontWeight.bold,
@@ -80,7 +80,7 @@ class VegeSingle extends StatelessWidget {
                 color: Colors.red,
               ),
               title: Text(
-                'Price : 200',
+                'Price : 100',
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
