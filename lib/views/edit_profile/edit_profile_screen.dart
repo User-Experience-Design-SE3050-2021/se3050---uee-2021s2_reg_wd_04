@@ -1,3 +1,4 @@
+import 'package:cargills_online_app/views/home/home_screen.dart';
 import 'package:cargills_online_app/views/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -51,10 +52,21 @@ class EditProfileScreen extends StatelessWidget {
                       PasswordFieldWidget(hintText: 'Password'),
                       SizedBox(height: size.height * 0.04),
                       PasswordFieldWidget(hintText: 'Confirm Password'),
-                      SizedBox(height: size.height * 0.03),
-                      ProfileButtonWidget(
-                        buttonTitle: 'Submit',
-                        onButtonPress: () {},
+                      SizedBox(height: size.height * 0.05),
+                      Container(
+                        margin: EdgeInsets.fromLTRB(10, 10, 10, 20),
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: ButtonWidget(
+                                buttonTitle: 'Update',
+                                onButtonPressed: () {
+                                  Get.to(HomeScreen());
+                                },
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),

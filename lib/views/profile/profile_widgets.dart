@@ -1,3 +1,4 @@
+import 'package:cargills_online_app/controllers/global_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -23,22 +24,28 @@ class ProfileImageWidget extends StatelessWidget {
   }
 }
 
-class ProfileBackButton extends StatelessWidget {
-  const ProfileBackButton({Key? key}) : super(key: key);
+class ProfileMenuButton extends StatelessWidget {
+  const ProfileMenuButton({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        IconButton(
-          onPressed: () {
-            Get.back();
-          },
-          icon: Icon(
-            Icons.arrow_back_ios_new_sharp,
-          ),
-        ),
-      ],
+    GlobalController globalController = Get.put(GlobalController());
+    return GetBuilder<GlobalController>(
+      builder: (controller) {
+        return Row(
+          children: [
+            IconButton(
+              onPressed: () {
+                controller.scaffoldKey.currentState!.openDrawer();
+              },
+              icon: Icon(
+                Icons.menu,
+                color: Colors.white,
+              ),
+            ),
+          ],
+        );
+      },
     );
   }
 }

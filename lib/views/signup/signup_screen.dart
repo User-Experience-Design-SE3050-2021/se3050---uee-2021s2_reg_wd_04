@@ -72,7 +72,7 @@ class SignUpScreen extends StatelessWidget {
                               child: ButtonWidget(
                                 buttonTitle: 'Sign Up',
                                 onButtonPressed: () {
-                                  print('Clicked');
+                                  Get.to(SignInScreen());
                                 },
                               ),
                             ),

@@ -15,7 +15,7 @@ class ProfileScreen extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: size.height * 0.05),
-          ProfileBackButton(),
+          ProfileMenuButton(),
           ProfileImageWidget(),
           SizedBox(height: size.height * 0.05),
           Container(

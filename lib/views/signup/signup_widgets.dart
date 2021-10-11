@@ -119,3 +119,59 @@ class ButtonWidget extends StatelessWidget {
     );
   }
 }
+
+// class BirthDayDatePicker extends StatelessWidget {
+//   const BirthDayDatePicker({Key? key}) : super(key: key);
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Padding(
+//       padding: const EdgeInsets.symmetric(vertical: 10),
+//       child: Column(
+//         mainAxisAlignment: MainAxisAlignment.start,
+//         crossAxisAlignment: CrossAxisAlignment.stretch,
+//         children: [
+//           labelTitle('Date of Birth', false),
+//           Padding(
+//             padding: const EdgeInsets.only(top: 5),
+//             child: RaisedButton(
+//                 shape: RoundedRectangleBorder(
+//                     borderRadius: BorderRadius.circular(5),
+//                     side: BorderSide(color: Colors.grey[200])),
+//                 elevation: 0.0,
+//                 padding: EdgeInsets.symmetric(vertical: 15),
+//                 onPressed: () async {
+//                   await showDatePicker(
+//                     context: context,
+//                     initialDate: DateTime.now(),
+//                     firstDate: DateTime(2000, 1),
+//                     lastDate: DateTime(2045),
+//                   ).then((pickedDate) {
+//                     if (pickedDate != null) {
+//                       setState(() {
+//                         ContactDetails.birthDay =
+//                             '${pickedDate.day < 10 ? '0${pickedDate.day}' : pickedDate.day}/${pickedDate.month < 10 ? '0${pickedDate.month}' : pickedDate.month}/${pickedDate.year}';
+//                       });
+//                     }
+//                   });
+//                 },
+//                 color: Colors.white,
+//                 child: Padding(
+//                   padding: const EdgeInsets.only(left: 10),
+//                   child: Align(
+//                     alignment: Alignment.centerLeft,
+//                     child: Text(
+//                       "${ContactDetails.birthDay != "" ? ContactDetails.birthDay : 'Select a date'}",
+//                       style: TextStyle(
+//                           color: Colors.black,
+//                           fontSize: 16,
+//                           fontWeight: FontWeight.normal),
+//                     ),
+//                   ),
+//                 )),
+//           ),
+//         ],
+//       ),
+//     );
+//   }
+// }

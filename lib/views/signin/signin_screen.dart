@@ -1,3 +1,4 @@
+import 'package:cargills_online_app/views/home/home_screen.dart';
 import 'package:cargills_online_app/views/signin/signin_widgets.dart';
 import 'package:cargills_online_app/views/signup/signup_screen.dart';
 import 'package:flutter/material.dart';
@@ -71,7 +72,7 @@ class SignInScreen extends StatelessWidget {
                               child: ButtonWidget(
                                 buttonTitle: 'Sign In',
                                 onButtonPressed: () {
-                                  print('Clicked');
+                                  Get.to(HomeScreen());
                                 },
                               ),
                             ),
