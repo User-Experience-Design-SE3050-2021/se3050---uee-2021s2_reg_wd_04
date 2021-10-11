@@ -23,6 +23,11 @@ TextTheme textTheme() {
       fontSize: 30,
       fontWeight: FontWeight.bold,
     ),
+    headline2: TextStyle(
+      color: Color(0xffFD051B),
+      fontSize: 20,
+      fontWeight: FontWeight.bold,
+    ),
     bodyText1: TextStyle(
       color: Color(0xffFD051B),
       fontSize: 30,
