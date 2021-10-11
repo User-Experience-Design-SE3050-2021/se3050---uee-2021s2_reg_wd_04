@@ -43,8 +43,8 @@ class VegeSingle2 extends StatelessWidget {
               right: 5,
               bottom: 1,
               child: Image.asset(
-                'assets/images/pump2.jpg',
-                scale: 20,
+                'assets/images/pump.jpg',
+                scale: 3,
               ),
             ),
             SizedBox(height: size.height * 0.05),

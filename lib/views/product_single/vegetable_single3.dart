@@ -43,7 +43,7 @@ class VegeSingle3 extends StatelessWidget {
               right: 5,
               bottom: 1,
               child: Image.asset(
-                'assets/images/carrots.png',
+                'assets/images/carrots.jpg',
                 scale: 1,
               ),
             ),

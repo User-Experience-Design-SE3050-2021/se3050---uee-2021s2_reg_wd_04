@@ -56,7 +56,7 @@ class Fruits extends StatelessWidget {
                   Column(
                     children: [
                       Container(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(5),
                         decoration: BoxDecoration(
                           color: Colors.white,
                           border: Border.all(
@@ -79,8 +79,8 @@ class Fruits extends StatelessWidget {
                                 right: 5,
                                 bottom: 1,
                                 child: Image.asset(
-                                  'assets/images/fruits.png',
-                                  scale: 16,
+                                  'assets/images/login_bottom.png',
+                                  scale: 2,
                                 ),
                               ),
                               Padding(
@@ -89,19 +89,19 @@ class Fruits extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     Text(
-                                      'Fruits',
+                                      'Available',
                                       style: TextStyle(
                                         // fontFamily: SANSATION_REGULAR,
                                         fontSize: 30,
-                                        fontWeight: FontWeight.w600,
-                                        color: Colors.orange,
+                                        fontWeight: FontWeight.w800,
+                                        color: Colors.green,
                                       ),
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.fromLTRB(
                                           0, 15.0, 0, 0),
                                       child: Text(
-                                        'List',
+                                        'Fruits',
                                         style: TextStyle(
                                           fontSize: 32,
                                           fontWeight: FontWeight.w600,
@@ -125,45 +125,48 @@ class Fruits extends StatelessWidget {
                           Expanded(
                             child: Column(
                               children: [
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    border: Border.all(
-                                      width: 2,
-                                      color: Colors.purple.shade400,
-                                    ),
-                                    borderRadius: BorderRadius.circular(20),
-                                  ),
-                                  margin: EdgeInsets.symmetric(
-                                    horizontal: 20,
-                                    vertical: 20,
-                                  ),
-                                  width: double.infinity,
-                                  height: size.height * 0.2,
-                                  child: Stack(
-                                    children: <Widget>[
-                                      Positioned(
-                                        right: 20,
-                                        top: -10,
-                                        child: Image.asset(
-                                          'assets/images/pay_credit.png',
-                                          scale: 16,
-                                        ),
+                                GestureDetector(
+                                  // onTap: () {
+                                  //   Get.to(VegeSingle());
+                                  // },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border: Border.all(
+                                        width: 5,
+                                        color: Colors.purple.shade400,
                                       ),
-                                      Positioned(
-                                        bottom: 10,
-                                        right: 35,
-                                        child: Text(
-                                          'Tomatoes',
-                                          style: TextStyle(
-                                            // fontFamily: SANSATION_REGULAR,
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.w600,
-                                            color: Color(0xFF6F35A5),
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    margin: EdgeInsets.symmetric(
+                                      horizontal: 20,
+                                      vertical: 20,
+                                    ),
+                                    width: double.infinity,
+                                    height: size.height * 0.2,
+                                    child: Stack(
+                                      children: <Widget>[
+                                        Positioned(
+                                          child: Image.asset(
+                                            'assets/images/fruits.jpg',
+                                            scale: 5,
                                           ),
                                         ),
-                                      ),
-                                    ],
+                                        Positioned(
+                                          bottom: 10,
+                                          left: 20,
+                                          child: Text(
+                                            'Apple',
+                                            style: TextStyle(
+                                              // fontFamily: SANSATION_REGULAR,
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.w800,
+                                              color: Colors.orange,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -172,45 +175,48 @@ class Fruits extends StatelessWidget {
                           Expanded(
                             child: Column(
                               children: [
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    border: Border.all(
-                                      width: 2,
-                                      color: Colors.purple.shade400,
-                                    ),
-                                    borderRadius: BorderRadius.circular(20),
-                                  ),
-                                  margin: EdgeInsets.symmetric(
-                                    horizontal: 20,
-                                    vertical: 20,
-                                  ),
-                                  width: double.infinity,
-                                  height: size.height * 0.2,
-                                  child: Stack(
-                                    children: <Widget>[
-                                      Positioned(
-                                        right: 20,
-                                        top: -10,
-                                        child: Image.asset(
-                                          'assets/images/piggy_bank.png',
-                                          scale: 16,
-                                        ),
+                                GestureDetector(
+                                  // onTap: () {
+                                  //   Get.to();
+                                  // },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border: Border.all(
+                                        width: 5,
+                                        color: Colors.purple.shade400,
                                       ),
-                                      Positioned(
-                                        bottom: 10,
-                                        right: 28,
-                                        child: Text(
-                                          'Recharge',
-                                          style: TextStyle(
-                                            // fontFamily: SANSATION_REGULAR,
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.w600,
-                                            color: Color(0xFF6F35A5),
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    margin: EdgeInsets.symmetric(
+                                      horizontal: 20,
+                                      vertical: 20,
+                                    ),
+                                    width: double.infinity,
+                                    height: size.height * 0.2,
+                                    child: Stack(
+                                      children: <Widget>[
+                                        Positioned(
+                                          child: Image.asset(
+                                            'assets/images/vegetables.jpg',
+                                            scale: 1,
                                           ),
                                         ),
-                                      ),
-                                    ],
+                                        Positioned(
+                                          bottom: 20,
+                                          left: 20,
+                                          child: Text(
+                                            'Pumpkins',
+                                            style: TextStyle(
+                                              // fontFamily: SANSATION_REGULAR,
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.w800,
+                                              color: Colors.black,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],

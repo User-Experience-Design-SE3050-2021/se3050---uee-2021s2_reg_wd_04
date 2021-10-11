@@ -1,6 +1,7 @@
 import 'package:cargills_online_app/views/product_single/vegetable_single.dart';
 import 'package:cargills_online_app/views/product_single/vegetable_single2.dart';
 import 'package:cargills_online_app/views/product_single/vegetable_single3.dart';
+import 'package:cargills_online_app/views/product_single/vegetable_single4.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -58,7 +59,7 @@ class Vegetables extends StatelessWidget {
                   Column(
                     children: [
                       Container(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(5),
                         decoration: BoxDecoration(
                           color: Colors.white,
                           border: Border.all(
@@ -81,8 +82,8 @@ class Vegetables extends StatelessWidget {
                                 right: 5,
                                 bottom: 1,
                                 child: Image.asset(
-                                  'assets/images/pumpkin.png',
-                                  scale: 16,
+                                  'assets/images/login_bottom.png',
+                                  scale: 2,
                                 ),
                               ),
                               Padding(
@@ -91,7 +92,7 @@ class Vegetables extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     Text(
-                                      'Vegetables',
+                                      'Available',
                                       style: TextStyle(
                                         // fontFamily: SANSATION_REGULAR,
                                         fontSize: 30,
@@ -103,9 +104,9 @@ class Vegetables extends StatelessWidget {
                                       padding: const EdgeInsets.fromLTRB(
                                           0, 15.0, 0, 0),
                                       child: Text(
-                                        'List',
+                                        'Vegetables',
                                         style: TextStyle(
-                                          fontSize: 32,
+                                          fontSize: 28,
                                           fontWeight: FontWeight.w600,
                                           color: Color(0xFF6F35A5),
                                         ),
@@ -150,12 +151,12 @@ class Vegetables extends StatelessWidget {
                                       children: <Widget>[
                                         Positioned(
                                           child: Image.asset(
-                                            'assets/images/tomatoes.jpg',
-                                            scale: 22,
+                                            'assets/images/vegetables.jpg',
+                                            scale: 1,
                                           ),
                                         ),
                                         Positioned(
-                                          bottom: 50,
+                                          bottom: 20,
                                           left: 20,
                                           child: Text(
                                             'Tomatoes',
@@ -200,12 +201,12 @@ class Vegetables extends StatelessWidget {
                                       children: <Widget>[
                                         Positioned(
                                           child: Image.asset(
-                                            'assets/images/tomatoes.jpg',
-                                            scale: 22,
+                                            'assets/images/vegetables.jpg',
+                                            scale: 1,
                                           ),
                                         ),
                                         Positioned(
-                                          bottom: 50,
+                                          bottom: 20,
                                           left: 20,
                                           child: Text(
                                             'Pumpkins',
@@ -255,13 +256,13 @@ class Vegetables extends StatelessWidget {
                                       children: <Widget>[
                                         Positioned(
                                           child: Image.asset(
-                                            'assets/images/tomatoes.jpg',
-                                            scale: 22,
+                                            'assets/images/vegetables.jpg',
+                                            scale: 1,
                                           ),
                                         ),
                                         Positioned(
-                                          bottom: 50,
-                                          left: 20,
+                                          bottom: 20,
+                                          left: 30,
                                           child: Text(
                                             'Carrots',
                                             style: TextStyle(
@@ -284,7 +285,7 @@ class Vegetables extends StatelessWidget {
                               children: [
                                 GestureDetector(
                                   onTap: () {
-                                    Get.to(VegeSingle());
+                                    Get.to(VegeSingle4());
                                   },
                                   child: Container(
                                     decoration: BoxDecoration(
@@ -305,12 +306,12 @@ class Vegetables extends StatelessWidget {
                                       children: <Widget>[
                                         Positioned(
                                           child: Image.asset(
-                                            'assets/images/tomatoes.jpg',
-                                            scale: 22,
+                                            'assets/images/vegetables.jpg',
+                                            scale: 1,
                                           ),
                                         ),
                                         Positioned(
-                                          bottom: 50,
+                                          bottom: 20,
                                           left: 20,
                                           child: Text(
                                             'Cabbages',
@@ -360,12 +361,12 @@ class Vegetables extends StatelessWidget {
                                       children: <Widget>[
                                         Positioned(
                                           child: Image.asset(
-                                            'assets/images/tomatoes.jpg',
-                                            scale: 22,
+                                            'assets/images/vegetables.jpg',
+                                            scale: 1,
                                           ),
                                         ),
                                         Positioned(
-                                          bottom: 50,
+                                          bottom: 20,
                                           left: 20,
                                           child: Text(
                                             'Tomatoes',
@@ -410,15 +411,15 @@ class Vegetables extends StatelessWidget {
                                       children: <Widget>[
                                         Positioned(
                                           child: Image.asset(
-                                            'assets/images/tomatoes.jpg',
-                                            scale: 22,
+                                            'assets/images/vegetables.jpg',
+                                            scale: 1,
                                           ),
                                         ),
                                         Positioned(
-                                          bottom: 50,
+                                          bottom: 20,
                                           left: 20,
                                           child: Text(
-                                            'Tomatoes',
+                                            'Cucumber',
                                             style: TextStyle(
                                               // fontFamily: SANSATION_REGULAR,
                                               fontSize: 20,
