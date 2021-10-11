@@ -31,7 +31,7 @@ class CartViewState extends State<CartView> {
     Size size = MediaQuery.of(context).size;
     GlobalController globalController = Get.put(GlobalController());
     return Container(
-      margin: EdgeInsets.fromLTRB(0, 20.0, 0, 0),
+      margin: EdgeInsets.fromLTRB(0, 30.0, 0, 0),
       child: Column(
         children: [
           Row(

@@ -1,6 +1,8 @@
 import 'package:cargills_online_app/controllers/global_controller.dart';
 import 'package:cargills_online_app/views/Cart/CartView.dart';
 import 'package:cargills_online_app/views/home/home_body.dart';
+import 'package:cargills_online_app/views/manage_address/manage_address_screen.dart';
+import 'package:cargills_online_app/views/manage_card/manage_card_screen.dart';
 import 'package:cargills_online_app/views/products_categories/categories_screen.dart';
 import 'package:cargills_online_app/views/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
@@ -115,7 +117,8 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     onTap: () {
-                      Navigator.pop(context);
+                      Get.to(ManageAddressScreen());
+                      // Navigator.pop(context);
                     },
                     trailing: Icon(
                       Icons.delivery_dining,
@@ -132,7 +135,8 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     onTap: () {
-                      Navigator.pop(context);
+                      Get.to(ManageCardScreen());
+                      // Navigator.pop(context);
                     },
                     trailing: Icon(
                       Icons.credit_card,
