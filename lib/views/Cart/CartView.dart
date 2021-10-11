@@ -179,6 +179,11 @@ class CartViewState extends State<CartView> {
                                     ].map<DropdownMenuItem<int>>((int value) {
                                       return DropdownMenuItem<int>(
                                         value: value,
+                                        onTap: () {
+                                          setState(() {
+                                            items[index].count = value;
+                                          });
+                                        },
                                         child: Text(
                                           value.toString(),
                                           style: TextStyle(
@@ -195,15 +200,11 @@ class CartViewState extends State<CartView> {
                                 padding: EdgeInsets.symmetric(
                                     horizontal: 10.0, vertical: 8.0),
                                 child: Checkbox(
-                                  value: items[index].isSelected,
-                                  onChanged: (bool? newValue) {
-                                    setState(
-                                      () {
-                                        // items[index].isSelected = newValue;
-                                      },
-                                    );
-                                  },
-                                ),
+                                    value: items[index].isSelected,
+                                    onChanged: (bool? newValue) {
+                                      if (newValue != null)
+                                        items[index].isSelected = newValue;
+                                    }),
                               ),
                             ),
                         ],
